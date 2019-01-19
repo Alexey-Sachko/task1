@@ -1,0 +1,81 @@
+.noscroll
+	overflow: hidden
+.popup
+	position: fixed
+	right: 0
+	bottom: 0
+	top: 0
+	left: 0
+	background-color: rgba(#2c3d53, 0.4)
+	z-index: 100
+	overflow-y: scroll
+	display: block
+	transition: opacity 0.5s ease
+	opacity: 0
+	&__close
+		font-size: 30px
+		position: absolute
+		top: 20px
+		right: 30px
+		color: #b5b5b5
+		background-color: transparent
+		cursor: pointer
+	&.hidden
+		display: none
+	&.visible
+		opacity: 1
+	&__title
+		margin-bottom: 42px
+	&-block 
+		margin-right: auto
+		margin-left: auto
+		width: 756px
+		max-width: 100%
+		background-color: #fff
+		padding: 50px 77px
+		position: relative
+		transition: all 0.5s ease
+		transform: translateY(-2000px)
+		&.active
+			transform: none
+	&-form
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		label, input, textarea
+			display: block
+			width: 100%
+		input, textarea
+			padding: 20px
+			font-size: 16px
+		label
+			color: #2c3d53
+			font-size: 17px
+			font-weight: 700
+			margin-bottom: 10px
+		&__name
+			width: 50%
+			padding-right: 10px
+			label
+				color: #1271f1
+		&__email
+			width: 50%
+			padding-left: 10px
+		&__text
+			width: 100%
+			margin-top: 20px
+			margin-bottom: 50px
+		&__submit
+			padding: 17px 22px
+			font-size: 15px
+			background-color: #1271f1
+			color: #fff
+			cursor: pointer
+			text-transform: uppercase
+		&__captcha
+			width: 311px
+			max-width: 100%
+			font-size: 15px
+			.descr
+				margin-top: 15px

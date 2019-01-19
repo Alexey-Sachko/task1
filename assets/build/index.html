@@ -202,7 +202,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row row-1">
-				<button class="btn-facebook">Share<span class="hide-796 show-mobile-facebook"> on Facebok</span></button>
+				<button id="btnFacebook" class="btn-facebook">Share<span class="hide-796 show-mobile-facebook"> on Facebok</span></button>
 				<nav class="navbar footer-navbar hide-mobile">
 					<a href="#" class="footer-navbar__link">Who is WAGP for?</a>
 					<a href="#" class="footer-navbar__link">Services</a>
@@ -210,7 +210,7 @@
 					<a href="#" class="footer-navbar__link">Pricing</a>
 					<a href="#" class="footer-navbar__link">Contact</a>
 				</nav>
-				<a href="#" class="footer-support">
+				<a href="#" class="footer-support" id="supportBtn">
 					<span class="footer-support__icon"></span>
 					<span>Support</span>
 				</a>
@@ -264,6 +264,58 @@
 		</div>
 		<!-- /.container -->
 	</footer>
+
+	<section class="popup hidden" id="popup">
+		<div class="popup-block" id="popupBlock">
+			<button class="popup__close" id="closeBtn">&#10006;</button>
+			<h3 class="section-title popup__title">
+				Support Form
+			</h3>
+			<form class="popup-form" action="#">
+				<div class="popup-form__name">
+					<label for="name">
+						Your name
+					</label>
+					<input type="text" name="name" id="name" placeholder="John Connor">
+				</div>
+				<!-- /.popup-form__name -->
+					
+				<div class="popup-form__email">
+					<label for="email">
+						Email
+					</label>
+					<input type="text" name="email" id="email">
+				</div>
+				<!-- /.popup-form__email -->
+
+				<div class="popup-form__text">
+					<label for="text">
+						Your text
+					</label>
+					<textarea name="text" id="text" cols="30" rows="7"></textarea>
+				</div>
+				<!-- /.popup-form__text -->
+
+				<div class="popup-form__captcha">
+					<img src="img/icon/captcha.png" alt="captcha" class="mw-100">
+					<div class="descr">
+						By signing up and signing in you agree to our 
+terms of service and privacy policy
+					</div>
+					<!-- /.descr -->
+				</div>
+				<!-- /.popup-form__captcha -->
+
+				<button class="popup-form__submit" type="submit">
+					Send Request
+				</button>
+
+						
+
+			</form>
+		</div>
+		<!-- /.popup-block -->
+	</section>
 
 	<script src="js/main.js"></script>
 </body>
