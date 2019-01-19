@@ -1,0 +1,75 @@
+*
+	box-sizing: border-box
+button
+	border: none
+a 
+	text-decoration: none
+	color: inherit
+body
+ font-family: 'Roboto', sans-serif;
+ color: #6c6e80
+ font-size: 15px
+.container
+	width: 1144px
+	margin: 0 auto
+.row
+	display: flex
+.section-title
+	font-size: 40px
+	font-weight: 400
+	line-height: 30px
+	color: #2c3c53
+.mw-100
+	max-width: 100%
+.page-numbers
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 330px
+	.numbers 
+		display: flex
+		justify-content: space-between
+		li 
+			padding: 9px 15px
+			border-right: 1px solid #dddddd
+			border-left: 1px solid #dddddd
+			transform: skewX(-15deg)
+			cursor: pointer
+			color: #dddddd
+			span 
+				display: block
+				transform: skewX(15deg)
+			&:not(:last-of-type)
+				margin-right: -1px
+		.active 
+			z-index: 10
+			border-color: #404040
+			color: #404040
+	.arrow
+		width: 42px
+		height: 11px
+		background: url(../img/icon/arrow.svg) center no-repeat
+		&-active
+			background-image: url(../img/icon/arrow-active.svg)
+			transform: rotate(180deg)
+		&-next
+			transform: rotate(180deg)
+			&.arrow-active
+				transform: none
+
+.btn-facebook
+	background-color: #4366bc
+	padding: 8px 15px 8px 37px
+	color: #ffffff
+	position: relative
+	cursor: pointer
+	&::before
+		content: ''
+		width: 9px
+		height: 20px
+		background: url(../img/icon/facebook-active.png) center no-repeat
+		position: absolute
+		left: 15px
+		top: 50%
+		margin-top: -10px
+		display: block

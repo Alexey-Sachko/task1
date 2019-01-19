@@ -1,0 +1,43 @@
+.services
+	.row
+		align-items: center
+	&__title
+		margin-bottom: 48px
+	&-text
+		padding-top: 51px
+		padding-bottom: 74px
+		padding-right: 60px
+		background-color: #f6f6f6
+		position: relative
+		width: 540px
+		&::before 
+			content: ''
+			width: 3000%
+			height: 100%
+			position: absolute
+			top: 0
+			right: -10px
+			transform: skewX(-7deg)
+			transform-origin: left bottom
+			background-color: #f6f6f6
+			z-index: -1
+		&__title
+			margin-bottom: 29px
+			font-size: 25px
+			font-weight: 400
+			line-height: 20px
+			color: #1271f1
+			display: inline-block
+			padding-top: 25px
+			padding-bottom: 16px
+			background: url(../img/services/1.png) center no-repeat
+		&__descr
+			font-weight: 300
+			line-height: 25px
+		&__important
+			font-weight: 500
+			padding-top: 25px
+			padding-bottom: 25px
+			color: #404040		
+	&-img
+		width: 624px
